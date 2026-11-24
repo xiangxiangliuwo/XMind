@@ -1,5 +1,11 @@
 # XMind🧠: Thinking Twice via Cross-Memory Reasoning for LLM-Based Autonomous Driving
 
+## 🔍 Framework Overview
+
+<p align="center">
+  <img src="assets/framework.svg" width="90%" alt="XMind framework">
+</p>
+
 XMind is a training-free framework that lets an LLM driving agent "think twice". The agent first
 decides from working memory of recent traffic states, then cross-checks the decision against
 episodic memory of critical risk events, in which alternative actions were verified by
