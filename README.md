@@ -27,7 +27,7 @@ XMind depends on specific library versions (e.g. `langchain==0.0.335`, `openai==
 `gymnasium==0.29.1`, `highway-env==1.8.2`); please install exactly the versions in `requirements.txt`.
 
 Capsule retrieval uses the [bge-m3](https://huggingface.co/BAAI/bge-m3) text-embedding model. Download it
-next to the repository (the default `model_path` is `../bge-m3`):
+next to the repository (the default `model_path` is `bge-m3`):
 
 ```bash
 huggingface-cli download BAAI/bge-m3 --local-dir bge-m3
