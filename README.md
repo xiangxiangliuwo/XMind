@@ -83,12 +83,7 @@ Run `python save_frames.py -h` for all options.
 If you find XMind useful in your research, please cite our paper:
 
 ```bibtex
-@article{xmind2026,
-  title   = {XMind: Thinking Twice via Cross-Memory Reasoning for LLM-Based Autonomous Driving},
-  author  = {Anonymous},
-  year    = {2026},
-  note    = {Under review}
-}
+
 ```
 
 ## 📝 License
