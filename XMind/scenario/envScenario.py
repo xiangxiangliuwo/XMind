@@ -1,5 +1,3 @@
-# Adapted from DiLu (https://github.com/PJLab-ADG/DiLu), licensed under the Apache License 2.0.
-# Modified for XMind.
 """Scenario encoder for highway-v0: selects one vehicle per direction slot, computes its risk and
 serialises the decision frame as JSON (the frame f_t that goes into working memory)."""
 
