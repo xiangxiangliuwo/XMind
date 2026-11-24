@@ -1,4 +1,4 @@
-# XMind🧠: Thinking Twice via Cross-Memory Reasoning for LLM-Based Autonomous Driving
+# 🧠XMind: Thinking Twice via Cross-Memory Reasoning for LLM-Based Autonomous Driving
 
 ## 🔍 Framework Overview
 
