@@ -6,9 +6,6 @@ decision against **episodic memory**: risk capsules recorded at critical states,
 candidate action was verified by counterfactual rollouts under perturbed traffic. If the retrieved
 capsule prefers a different action, the agent decides a second time with that evidence.
 
-This repository contains the closed-loop highway-env implementation used for the baseline
-comparison (Q1) and the ablation study (Q3) of the paper.
-
 ## Method overview
 
 | Paper | What happens | Code |
@@ -128,22 +125,6 @@ Capsules are stored in `bank_dir` as `CAP000001.json`, ... together with `bank.j
 | XMind (different / matched scenarios) | bank built in another / the same traffic configuration (`bank_dir`) |
 | Working memory window (Table IV) | `working_memory_size: 1 / 3 / 5`, window seeds below |
 
-Seeds used in the paper:
-
-```yaml
-# Q1 test seeds, 5 lanes, density 3.0
-[6932, 2779, 386, 1543, 2187, 72107, 9355, 7800821, 693, 914, 588, 3654, 8216, 4687, 637, 3412104, 694354, 5625983, 8091806, 8579079, 8774675, 5166103, 2147231, 2897107, 2582682, 5096435, 456178, 9059526, 8620879, 3641679]
-# Q1 test seeds, 5 lanes, density 2.5
-[6932, 2709, 376, 1543, 2089, 721007, 9355, 7808210, 693, 984, 589, 3647, 8206, 4697, 637, 3412104, 694354, 5625983, 8091806, 8579079, 8774675, 5166103, 214723, 2897107, 2582682, 5096435, 456178, 9059526, 8620879, 3641679]
-# Q1 test seeds, 4 lanes, density 2.5
-[6932, 2698, 376, 11453, 7302, 712070, 9355, 771228, 693, 984, 577, 3275, 8193, 4399, 627, 341210, 64354, 525983, 801806, 857079, 877475, 516103, 14723, 897107, 258682, 596435, 46178, 909526, 860879, 361679]
-# memory construction
-[6866371, 1211463, 462719, 6267180, 6992283, 8222120, 8696622, 4892351, 3421479, 6600245, 686371, 121463, 46719, 627180, 692283, 822120, 869622, 489351, 342479, 660245, 68466371, 12114623, 4627129, 62672180, 69922283, 82222120, 86926622, 48923521, 34214729, 66002452]
-# Q3 component ablation (Table V)
-[6932, 27018, 1646580, 1543, 2330150, 72007, 9355, 7800821, 6937, 9874, 5879, 36477, 82706, 46797, 3726688, 69172, 270119, 16416580, 15143, 23310150, 720107, 93155, 78010821, 69137, 98174, 58179, 364177, 827107, 467971, 37266188]
-# Q3 working memory window (Table IV)
-[6932, 27018, 1646580, 1543, 2330150, 72007, 9355, 7800821, 6937, 9874, 5879, 36477, 82706, 46797, 3726688]
-```
 
 LLM outputs are not fully deterministic, even at temperature 0, so repeated runs can differ slightly.
 
