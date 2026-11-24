@@ -1,5 +1,3 @@
-# Adapted from DiLu (https://github.com/PJLab-ADG/DiLu), licensed under the Apache License 2.0.
-# Modified for XMind.
 """
 XMind: closed-loop highway-env simulation with a frozen LLM, working memory and episodic memory.
 
