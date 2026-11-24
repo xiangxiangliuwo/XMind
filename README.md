@@ -1,13 +1,13 @@
-# XMind: Thinking Twice via Cross-Memory Reasoning for LLM-Based Autonomous Driving
+# XMind🧠: Thinking Twice via Cross-Memory Reasoning for LLM-Based Autonomous Driving
 
 XMind is a training-free framework that lets an LLM driving agent "think twice". The agent first
 decides from working memory of recent traffic states, then cross-checks the decision against
 episodic memory of critical risk events, in which alternative actions were verified by
 counterfactual rollouts. If the two disagree, it decides again with the retrieved evidence.
 
-## Getting Started
+## 🚀 Getting Started
 
-### 1. Requirements
+### 1. Requirements 📦
 
 We recommend a conda environment with Python 3.8:
 
@@ -27,7 +27,7 @@ next to the repository (the default `model_path` is `../bge-m3`):
 huggingface-cli download BAAI/bge-m3 --local-dir ../bge-m3
 ```
 
-### 2. Configuration
+### 2. Configuration ⚙️
 
 All settings are in `config.yaml`.
 
@@ -47,7 +47,7 @@ All settings are in `config.yaml`.
 The method parameters (counterfactual rollouts, capsule selection, retrieval weight) are fixed in
 `XMind/episodic_memory/settings.py`.
 
-### 3. Running XMind
+### 3. Running XMind 🧠
 
 ```bash
 python run_XMind.py
@@ -66,7 +66,7 @@ Set `evolve: true` in `config.yaml`. After every episode XMind verifies the deci
 with counterfactual rollouts and saves a risk capsule (`CAP000001.json`, ...) in `bank_dir`.
 To evaluate with a fixed memory, set `evolve: false` and `retrieve: true`.
 
-### 4. Visualizing Results
+### 4. Visualizing Results 📊
 
 Export frames of a recorded video as PNG images:
 
@@ -78,7 +78,7 @@ python save_frames.py results_xxx/videos/highway_0_seed6932-episode-0.mp4 --inte
 
 Run `python save_frames.py -h` for all options.
 
-## Citation
+## 🔖 Citation
 
 If you find XMind useful in your research, please cite our paper:
 
@@ -91,7 +91,7 @@ If you find XMind useful in your research, please cite our paper:
 }
 ```
 
-## License
+## 📝 License
 
 XMind is released under the Apache 2.0 license. Parts of `run_XMind.py`,
 `XMind/driver_agent/driverAgent.py` and `XMind/scenario/envScenario.py` are adapted from
