@@ -13,11 +13,11 @@ AZURE_CHAT_DEPLOY_NAME:             # chat model deployment name
 ############ Experiment ############
 episodes_num: 1                     # runs per seed; total episodes = len(scene_seeds) x episodes_num
 result_folder: 'results'            # output goes to <result_folder>_<timestamp>/
-scene_seeds: [37266188]
+scene_seeds: [3726]
 
 ############ Highway-env ############
 lanes_count: 5
-simulation_duration: 30             # decision steps per episode (1 Hz)
+simulation_duration: 20             # decision steps per episode
 vehicle_count: 15
 other_vehicle_type: "highway_env.vehicle.behavior.IDMVehicle"
 vehicles_density: 3.0
