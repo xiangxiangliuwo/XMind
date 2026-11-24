@@ -1,4 +1,4 @@
-<h1 align="center">🧠XMind: Thinking Twice via Cross-Memory Reasoning for LLM-Based Autonomous Driving
+<h1 align="center">🧠XMind: Thinking Twice via Cross-Memory Reasoning for LLM-Based Autonomous Driving</h1>
 
 <p align="center">
   Zuyi Guo<sup>1</sup>, Xianjie Dai<sup>1</sup>, Lei Yang<sup>2</sup>, Xiaocong Zhao<sup>3</sup>, Jingguang Li<sup>1</sup>, Kitae Jang<sup>1</sup>, Heye Huang<sup>1&dagger;</sup>
