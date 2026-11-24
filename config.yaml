@@ -1,0 +1,36 @@
+############ Large language model ############
+OPENAI_API_TYPE: 'openai'           # 'openai' or 'azure'
+# OpenAI or an OpenAI-compatible endpoint
+OPENAI_KEY: ''                      # your API key (or leave empty and set the OPENAI_API_KEY environment variable)
+OPENAI_CHAT_MODEL: 'gpt-6-astra'
+OPENAI_API_BASE: 'https://www.micuapi.ai/v1'   # leave empty for the default OpenAI endpoint
+# Azure OpenAI
+AZURE_API_BASE:                     # https://xxxxxxx.openai.azure.com/
+AZURE_API_VERSION: "2023-07-01-preview"
+AZURE_API_KEY:                      # 'xxxxxxx'
+AZURE_CHAT_DEPLOY_NAME:             # chat model deployment name
+
+############ Experiment ############
+episodes_num: 1                     # runs per seed; total episodes = len(scene_seeds) x episodes_num
+result_folder: 'results'            # output goes to <result_folder>_<timestamp>/
+scene_seeds: [37266188]
+
+############ Highway-env ############
+lanes_count: 5
+simulation_duration: 30             # decision steps per episode (1 Hz)
+vehicle_count: 15
+other_vehicle_type: "highway_env.vehicle.behavior.IDMVehicle"
+vehicles_density: 3.0
+
+############ Working memory ############
+working_memory_size: 3              # N most recent decision frames in the prompt
+
+############ Episodic memory (counterfactual risk capsules) ############
+# Each step the LLM first decides from working memory only (round 1). With retrieve on, the most
+# similar capsule is retrieved: if its preferred action equals the round-1 action, that action is
+# used; otherwise the capsule is added to the prompt and the LLM decides again (round 2).
+episodic_memory:
+  retrieve: false                   # true: retrieve capsules (two-round decision); false: round 1 only
+  evolve: false                     # true: build capsules after each episode; false: frozen memory
+  bank_dir: "capsule_bank"          # capsule bank folder, relative to the project root (created if missing)
+model_path: "../bge-m3"             # local bge-m3 (sentence-transformers) folder, relative to the project root; used when retrieve is true

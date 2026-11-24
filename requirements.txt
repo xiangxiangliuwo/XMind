@@ -1,0 +1,28 @@
+# Tested with Python 3.8.20. Newer versions of gymnasium (>= 1.0), langchain (>= 0.1) or
+# openai (>= 1.0) change APIs used here; keep these versions to reproduce the experiments.
+
+# simulation
+gymnasium==0.29.1
+highway-env==1.8.2
+numpy==1.24.4
+pygame==2.6.1
+matplotlib==3.7.5
+
+# risk field
+torch==2.4.1
+
+# LLM
+langchain==0.0.335
+openai==0.28.1
+pydantic==2.10.6
+
+# capsule retrieval (bge-m3 text embeddings)
+sentence-transformers==3.2.1
+transformers==4.46.3
+
+# configuration, console output, videos
+pyyaml==6.0.3
+rich==14.3.4
+moviepy==1.0.3
+imageio==2.35.1
+imageio-ffmpeg==0.5.1
