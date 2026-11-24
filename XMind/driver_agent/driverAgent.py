@@ -1,5 +1,3 @@
-# Adapted from DiLu (https://github.com/PJLab-ADG/DiLu), licensed under the Apache License 2.0.
-# Modified for XMind.
 """
 Driving agent with a frozen LLM and "Think Twice" decisions.
 
