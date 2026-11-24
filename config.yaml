@@ -30,4 +30,4 @@ episodic_memory:
   retrieve: false                   # true: retrieve capsules (two-round decision); false: round 1 only
   evolve: false                     # true: build capsules after each episode; false: frozen memory
   bank_dir: "capsule_bank"          # capsule bank folder, relative to the project root (created if missing)
-model_path: "../bge-m3"             # local bge-m3 (sentence-transformers) folder, relative to the project root; used when retrieve is true
+model_path: "bge-m3"             # local bge-m3 (sentence-transformers) folder, relative to the project root; used when retrieve is true
