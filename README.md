@@ -39,7 +39,7 @@ All settings are in `config.yaml`.
 
 - `scene_seeds`, `episodes_num`: one episode per seed, repeated `episodes_num` times
 - `lanes_count`, `vehicles_density`, `simulation_duration`: highway-env traffic and episode length
-- `working_memory_size`: number of recent frames in working memory (3 in the paper)
+- `working_memory_size`: number of recent frames in working memory
 - `episodic_memory.retrieve`: retrieve risk capsules and decide twice when they disagree
 - `episodic_memory.evolve`: build new risk capsules after every episode
 - `episodic_memory.bank_dir`: folder of the capsule bank
