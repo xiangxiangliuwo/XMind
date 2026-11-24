@@ -30,7 +30,7 @@ Capsule retrieval uses the [bge-m3](https://huggingface.co/BAAI/bge-m3) text-emb
 next to the repository (the default `model_path` is `../bge-m3`):
 
 ```bash
-huggingface-cli download BAAI/bge-m3 --local-dir ../bge-m3
+huggingface-cli download BAAI/bge-m3 --local-dir bge-m3
 ```
 
 ### 2. Configuration ⚙️
