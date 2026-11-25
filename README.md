@@ -1,6 +1,11 @@
 <h1 align="center">🧠XMind: Thinking Twice via Cross-Memory Reasoning for LLM-Based Autonomous Driving</h1>
 
 <p align="center">
+  <a href="https://arxiv.org/abs/2611.32209"><img src="https://img.shields.io/badge/arXiv-2611.32209-b31b1b.svg" alt="arXiv"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" alt="License: Apache 2.0"></a>
+</p>
+
+<p align="center">
   Zuyi Guo<sup>1</sup>, Xianjie Dai<sup>1</sup>, Lei Yang<sup>2</sup>, Xiaocong Zhao<sup>3</sup>, Jingguang Li<sup>1</sup>, Kitae Jang<sup>1</sup>, Heye Huang<sup>1&dagger;</sup>
 </p>
 
