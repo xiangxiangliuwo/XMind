@@ -88,7 +88,12 @@ To evaluate with a fixed memory, set `evolve: false` and `retrieve: true`.
 If you find XMind useful in your research, please cite our paper:
 
 ```bibtex
-
+@article{guo2026xmind,
+  title={XMind: Thinking Twice via Cross-Memory Reasoning for LLM-Based Autonomous Driving},
+  author={Guo, Zuyi and Dai, Xianjie and Yang, Lei and Zhao, Xiaocong and Li, Jingguang and Jang, Kitae and Huang, Heye},
+  journal={arXiv preprint arXiv:2611.32209},
+  year={2026}
+}
 ```
 
 ## 📝 License
